@@ -11,20 +11,34 @@
 body{margin:0;background:#FAF6EC;-webkit-font-smoothing:antialiased}
 a{color:#B99447;text-decoration:none}
 a:hover{color:#8C6E2E}
+img{max-width:100%}
+@media(max-width:820px){
+  .cs-grid{grid-template-columns:1fr !important;min-height:0 !important}
+  .cs-left{padding:34px 24px 40px !important;min-height:0 !important}
+  .cs-inner{padding:44px 0 !important}
+  .cs-h1{font-size:42px !important}
+  .cs-lead{max-width:none !important}
+  .cs-contact{gap:26px 40px !important}
+  .cs-media{order:-1;min-height:260px !important}
+  .cs-media>div:last-child{left:20px !important;right:20px !important;top:20px !important;bottom:20px !important}
+}
+@media(max-width:480px){
+  .cs-h1{font-size:34px !important}
+}
 </style></helmet>
-<div style="font-family:Jost,system-ui,sans-serif;color:#2C2A26;min-height:100vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,0.92fr);background:#FAF6EC">
+<div class="cs-grid" style="font-family:Jost,system-ui,sans-serif;color:#2C2A26;min-height:100vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,0.92fr);background:#FAF6EC">
 
-  <div style="display:flex;flex-direction:column;justify-content:space-between;padding:52px 72px 44px 96px;min-height:100vh;box-sizing:border-box">
+  <div class="cs-left" style="display:flex;flex-direction:column;justify-content:space-between;padding:52px 72px 44px 96px;min-height:100vh;box-sizing:border-box">
     <a href="home.html" style="display:block"><img src="assets/logo-zinos.png" alt="Zinos Wealth" style="display:block;height:50px;width:auto"></a>
 
-    <div style="padding:64px 0">
+    <div class="cs-inner" style="padding:64px 0">
       <div style="font-size:12px;letter-spacing:.2em;color:#B99447;margin-bottom:28px">FINANCIAL ADVISORY IN QUEENSLAND</div>
-      <h1 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:70px;line-height:1.15;color:#241F19;margin:0;max-width:600px">Something considered is<br><em style="font-style:italic;color:#B99447">on the way.</em></h1>
+      <h1 class="cs-h1" style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:70px;line-height:1.15;color:#241F19;margin:0;max-width:600px">Something considered is<br><em style="font-style:italic;color:#B99447">on the way.</em></h1>
       <div style="width:64px;height:2px;background:#C0A053;margin:34px 0 30px"></div>
-      <p style="font-size:17px;line-height:1.85;color:#4A453D;margin:0;max-width:430px;text-wrap:pretty">Our new site launches soon. In the meantime, we are already taking on clients who want personalised advice to grow, protect and enjoy their wealth.</p>
+      <p class="cs-lead" style="font-size:17px;line-height:1.85;color:#4A453D;margin:0;max-width:430px;text-wrap:pretty">Our new site launches soon. In the meantime, we are already taking on clients who want personalised advice to grow, protect and enjoy their wealth.</p>
     </div>
 
-    <div style="display:flex;flex-wrap:wrap;gap:40px 56px;align-items:flex-start;padding-top:34px;border-top:1px solid rgba(0,0,0,.09)">
+    <div class="cs-contact" style="display:flex;flex-wrap:wrap;gap:40px 56px;align-items:flex-start;padding-top:34px;border-top:1px solid rgba(0,0,0,.09)">
       <div style="display:flex;align-items:center;gap:13px;font-size:14.5px;color:#4A453D"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#C0A053" stroke-width="1.3"><path d="M3 2.5h2.5l1.2 3-1.6 1.2a8 8 0 004.2 4.2l1.2-1.6 3 1.2V13c0 .6-.5 1-1 1A11 11 0 012 3.5c0-.6.4-1 1-1z"/></svg><span>07 3188 9123</span></div>
       <div style="display:flex;align-items:center;gap:13px;font-size:14.5px;color:#4A453D"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#C0A053" stroke-width="1.3"><rect x="1.5" y="3.5" width="13" height="9"/><path d="M1.5 4l6.5 5 6.5-5"/></svg><span>hello@zinoswealth.com.au</span></div>
       <div style="display:flex;align-items:flex-start;gap:13px;font-size:14.5px;line-height:1.6;color:#4A453D"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#C0A053" stroke-width="1.3" style="margin-top:3px"><path d="M8 14.5s5-5 5-8.5a5 5 0 00-10 0c0 3.5 5 8.5 5 8.5z"/><circle cx="8" cy="6" r="1.8"/></svg><span>Level 12, 240 Queen Street, Brisbane QLD 4000</span></div>
@@ -32,7 +46,7 @@ a:hover{color:#8C6E2E}
     </div>
   </div>
 
-  <div style="position:relative;overflow:hidden;background:#EFE9DB">
+  <div class="cs-media" style="position:relative;overflow:hidden;background:#EFE9DB">
     <img src="assets/hero-coast.png" alt="Gold Coast shoreline at sunrise" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:65% center">
     <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(250,246,236,.85) 0%,rgba(250,246,236,0) 34%)"></div>
     <div style="position:absolute;left:44px;bottom:44px;right:44px;top:44px;border:1px solid rgba(255,255,255,.55);pointer-events:none"></div>
